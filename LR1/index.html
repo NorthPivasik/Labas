@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laba1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .goods-navbar {
+        background-color: rgb(235, 235, 235);
+    }
+    .goods-navbar a {
+        color: rgb(60, 60, 60);
+    }
+
+    .nav-item-subdirectory {
+        height: 45px; padding: 0 15px; display: flex; justify-content: center; align-items: center; text-decoration: none; font-size: 13px;
+    }
+
+    .nav-item-subdirectory:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .secondbar {
+        height: 120px;
+        width: 100%;
+    }
+
+    .form-control {
+        width: 150%;
+        border-radius: 20px;
+        border: 2px solid orange;
+    }
+
+    .nav-item-subdirectory2 {
+        font-size: 2.5vh;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+     .nav-item-subdirectory2:hover {
+        cursor: pointer;
+        background-color: orange;
+        color: black;
+    }
+
+    .nav.g > :last-child {
+        margin-left: auto;
+    }
+
+    .pill {
+        height: 40px;
+        width: 80%;
+        border-radius: 20px;
+        border: 2px solid rgb(9, 109, 209);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.25vh;
+        font-weight: bold;
+    }
+
+    .smallpill {
+        height: 18px;
+        width: 13%;
+        border-radius: 20px;
+        border: 1px solid orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    .bluecircle {
+        height: 5px;
+        width: 5px;
+        border-radius: 5px;
+        background-color: rgb(9, 109, 209);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hoverunderline:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .pilly {
+        height: 35px;
+        width: 120%;
+        background-color: rgb(255, 190, 0);
+        border-radius: 20px;
+        font-size: 2.25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pilly:hover {
+        background-color: rgb(255, 200, 0);
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="goods-navbar">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-item-subdirectory text-primary">Распродажа%</a></li>
+                <li class="nav-item"><a class="nav-item-subdirectory text-warning">Акции</a></li>
+                <li class="nav-item"><a class="nav-item-subdirectory">Контакты</a></li>
+                <li class="nav-item"><a class="nav-item-subdirectory">Покупателям</a></li>
+                <li class="nav-item"><a class="nav-item-subdirectory">Доставка и оплата</a></li>
+                <li class="nav-item"><a class="nav-item-subdirectory">Youtube</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="nav justify-content-between" style="align-items: center;">
+            <li class="nav-item">
+                <img src="img/logo.svg">
+            </li>
+            <li class="nav-item">
+                <input class="form-control" type="search" placeholder="Я ищу..." aria-label="Search">
+            </li>
+            <li class="nav-item">
+                <div style="color: blue; text-decoration: underline;">Волгоград</div>
+            </li>
+            <li class="nav-item">
+                <div class="text-primary" style="font-size: 2vh;">Пункт самовывоза: г. Волгоград, ул.<br> Моторная,11Б</div>
+            </li>
+        </ul>
+    </div>
+    <div class="container" style="border-top: 1px solid gray; border-bottom: 1px solid gray;">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-item-subdirectory2 text-primary">Велосипеды</a></li>
+            <li class="nav-item"><a class="nav-item-subdirectory2">Аксессуары</a></li>
+            <li class="nav-item"><a class="nav-item-subdirectory2">Запчасти</a></li>
+            <li class="nav-item"><a class="nav-item-subdirectory2">Экипировка</a></li>
+            <li class="nav-item"><a class="nav-item-subdirectory2">Инструменты</a></li>
+            <li class="nav-item"><a class="nav-item-subdirectory2">Самокаты</a></li>
+            <li class="nav-item"><a class="nav-item-subdirectory2">Веломастерская</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="container">
+        <ul class="nav">
+            <li class="text-muted">Главная</li>
+            <li>&emsp;/&emsp;</li>
+            <li class="text-muted">Cube</li>
+            <li>&emsp;/&emsp;</li>
+            <li class="text-muted">2022</li>
+            <li>&emsp;/&emsp;</li>
+            <li class="text-muted">Горный велосипед Cube Aim Pro 29 (2022)</li>
+        </ul>
+    </div>
+    <br>
+    <div class="container">
+        <ul class="nav g d-flex">
+            <li style="font-size: 4.5vh; font-weight: bold;">Горный велосипед Cube Aim Pro 29 (2022)</li>
+            <li class="text-muted"><div style="height: 100%; display: flex; justify-content: center; align-items: center;">&emsp;Нет в наличии</div></li>
+            <img src="img/cube.jpg">
+        </ul>
+    </div>
+    <div class="container text-muted" style="font-size: 2vh;">Артикул: 72187</div>
+    <div class="container d-flex" style="width: 100%; height: fit-content;">
+        <div style="width: 10%;">
+            <img src="img/small.jpg" style="width: 100%;">
+            <br>
+            <br>
+            <img src="img/small2.jpg" style="width: 100%;">
+        </div>
+        &emsp;
+        <div style="width: 60%;">
+            <img src="img/full.jpg" style="width: 100%;">
+        </div>
+        &emsp;&emsp;
+        <div style="width: 25%;">
+            <div class="text-muted" style="font-size: 9vh;">88 000&#8381;</div>
+            <div class="text-muted">Нет в наличии</div><br>
+            <div class="pill">Уведомить о поступлении</div><br>
+            <div style="font-weight: bold; font-size: 3.25vh;">Похожие товары в наличии</div>
+            <img src="img/big.jpg" style="width: 100%;"><br><br>
+            <div style="font-size: 2.25vh;">Горный велосипед 29"</div>
+            <div style="font-weight: bold;">Scott Aspect 960 (2022)</div><br>
+            <div class="text-muted d-flex" style="align-items: center;"><s>97 050&#8381;</s>&ensp;<div class="smallpill">-30%</div></div>
+            <div class="text-primary" style="font-size: 4vh;".>67 900&#8381;</div>
+            <div class="text-success">В наличии</div>
+        </div>
+    </div>
+    <div class="container text-muted" style="font-size: 2.5vh;">
+        Велосипед Cube Aim Pro 29 (2022) скоро будет в наличии с доставкой по Волгограду. В наличии есть похожая модель 2022 года по цене 67 900 руб. Гарантия: 12 месяцев
+    </div><br>
+    <div class="container d-flex" style="align-items: center; font-size: 2.25vh;">
+        Велосипед любительского уровня
+        <div class="bluecircle"></div>
+        Модель оснащена алюминиевой рамой
+        <div class="bluecircle"></div>
+        Дисковые гидравлические тормоза
+        <div class="bluecircle"></div>
+        16 скоростей
+        <div class="bluecircle"></div>
+        Задний переключатель Shimano Acera
+    </div>
+    <br>
+    <div class="container d-flex" style="width: 100%;">
+        <div class="w-75">
+            <div class="d-flex" style="border-bottom: 1px solid gray; height: 30px;">
+                <div style="border-bottom: 5px solid orange;">Характеристики*</div>
+                <div style="margin-left: 10%; margin-right: 10%;">Отзывы</div>
+                <div>Вопросы и ответы</div>
+            </div>
+            <br>
+            <div style="font-weight: bold; font-size: 3.7vh;">Описание</div><br>
+            Горный велосипед Cube Aim Pro 29 (2022) ориентирован на активных людей. Покрышки CUBE IMPAC Smartpac, 2.25 позволяют быстро набрать скорость независимо от типа и влажности покрытия. Мощные шатуны интенсивно передают усилия мышц на вал каретки. Классическая спортивная рама выполнена из алюминиевого сплава. Узкое спортивное седло Natural Fit Venec Lite с противоскользящей поверхностью. На велосипеде стоит стандартное оборудование. Предусмотрен задний переключатель Shimano RD-M360, 8-Speed. Для данного велосипеда были выбраны дисковые гидравлические тормоза Tektro HD-M275.
+            <br><br>
+            <div style="font-weight: bold; font-size: 3vh;">Технические характеристики</div><br>
+            <div style="font-weight: bold; font-size: 3vh;">Рама и амортизаторы</div>
+            <div style="display: flex; flex-direction: column; gap: 1vh;">
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Рама</div>
+                    <div class="w-75">Aluminium Lite, AMF, Double Butted, Internal Cable Routing, Tapered Head Tube, Flat Mount Brake, SIC Mount, FM Kickstand Mount</div>
+                </div>
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Вилка</div>
+                    <div class="w-75">SR Suntour XCT, 100mm</div>
+                </div>
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Вес всего велосипеда</div>
+                    <div class="w-75">14.60 кг</div>
+                </div> 
+            </div><br>
+            <div style="font-weight: bold; font-size: 3vh;">Цепная передача</div>
+            <div style="display: flex; flex-direction: column; gap: 1vh;">
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Манетки</div>
+                    <div class="w-75">Shimano SL-M315, Rapidfire-Plus</div>
+                </div>
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Передний переключатель</div>
+                    <div class="w-75">Shimano FD-M315, Top Swing, 31.8mm Clamp</div>
+                </div>
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Задний переключатель</div>
+                    <div class="w-75">Shimano RD-M360, 8-Speed</div>
+                </div>
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Шатуны</div>
+                    <div class="w-75">Shimano FC-M315, 36x22T</div>
+                </div>
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Количество скоростей</div>
+                    <div class="w-75">16</div>
+                </div>
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Цепь</div>
+                    <div class="w-75">KMC Z8.3</div>
+                </div> 
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Педали</div>
+                    <div class="w-75">CUBE PP MTB</div>
+                </div> 
+            </div><br>
+            <div style="font-weight: bold; font-size: 3vh;">Колеса</div>
+            <div style="display: flex; flex-direction: column; gap: 1vh;">
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Диаметр колеса</div>
+                    <div class="w-75">29.0</div>
+                </div>
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Обода</div>
+                    <div class="w-75">CUBE ZX20, 32H, Disc</div>
+                </div>
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Втулка</div>
+                    <div class="w-75">CUBE Alloy Light, QR, 6-Bolt</div>
+                </div> 
+                <div class="d-flex">
+                    <div class="w-25 text-muted">Покрышки</div>
+                    <div class="w-75">CUBE IMPAC Smartpac, 2.25</div>
+                </div> 
+            </div><br>
+        </div>
+        &emsp;
+        <div style="width: 23%; margin-left: 2%; display: flex; flex-direction: column; gap: 1.5vh;">
+            <div class="d-flex" style="align-items: center;">
+                <div style="width: 15%;"><img src="img/helper-shield.svg"></div>
+                &ensp;  
+                <div class="text-primary hoverunderline">Гарантия возврата</div>
+            </div>
+            <div class="d-flex" style="align-items: center;">
+                <div style="width: 15%;"><img src="img/helper-size.svg"></div>
+                &ensp;  
+                <div class="text-primary hoverunderline">Как выбрать размер</div>
+            </div>
+            <div class="d-flex" style="align-items: center;">
+                <div style="width: 15%;"><img src="img/helper-place.svg"></div>
+                &ensp;  
+                <div class="text-primary hoverunderline">Где купить</div>
+            </div>
+            <div class="d-flex" style="align-items: center;">
+                <div style="width: 15%;"><img src="img/helper-sale.svg"></div>
+                &ensp;  
+                <div class="text-primary hoverunderline">Купить дешевле</div>
+            </div>
+            <div class="d-flex" style="align-items: center;">
+                <div style="width: 15%;"><img src="img/helper-credit.svg"></div>
+                &ensp;  
+                <div class="text-primary hoverunderline">Купить в кредит</div>
+            </div>
+            <div class="d-flex" style="align-items: center;">
+                <div style="width: 15%;"><img src="img/helper-message.svg"></div>
+                &ensp;  
+                <div class="text-primary hoverunderline">Сообщить о снижении цены</div>
+            </div>
+            <br><br>
+            <img src="img/yandex-market.svg" style="width: 80%;">
+            Наш рейтинг - &#11088;&#11088;&#11088;&#11088;&#11088;
+            <div class="pilly">Посмотреть отзывы</div>
+        </div>
+    </div>
+</body>
+</html>

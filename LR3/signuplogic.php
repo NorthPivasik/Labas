@@ -15,7 +15,7 @@ $blood_type = isset($_POST["blood_type"]) ? $_POST["blood_type"] : "";
 $rh_factor = isset($_POST["rh_factor"]) ? $_POST["rh_factor"] : "";
 
 
-if (!preg_match("/(?=^.{7,}$)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/", $password) 
+if (!preg_match("/(?=^.{7,}$)(?![.\n])(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/", $password) 
     || preg_match("/(?=.[а-я])(?=.[А-Я])/", $password)) {
     $_SESSION['message'] = "Недопустимый формат пароля ";
 } else if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/", $login)) {

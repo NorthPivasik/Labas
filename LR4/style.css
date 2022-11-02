@@ -1,0 +1,51 @@
+.nav-item-subdirectory {
+    height: 45px;
+    padding: 0 15px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none; 
+    font-size: 13px;
+}
+
+.nav-item-subdirectory:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-control {
+    width: 150%;
+    border-radius: 20px;
+    border: 2px solid orange;
+}
+
+.nav-item-subdirectory2 {
+    font-size: 15px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-item-subdirectory2:hover {
+    cursor: pointer;
+    background-color: orange;
+    color: black;
+}
+
+.imgd {
+    width: 100px;
+}
+
+.gap10down {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gap10 {
+    display: flex;
+    gap: 10px;
+}

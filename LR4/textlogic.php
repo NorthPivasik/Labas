@@ -46,7 +46,7 @@
 
         $html = trim($html);
         $html = strip_tags($html);
-        $html = str_replace(array(",", "]"), "", $html);
+        $html = str_replace(array(",", "]", "(", "."), "", $html);
         $html_array = explode(" ", $html);
         
 

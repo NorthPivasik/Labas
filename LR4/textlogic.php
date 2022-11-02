@@ -74,7 +74,7 @@
         $xml->loadHTML($html);
 
         $html = preg_replace("/<style(.{0,})<\/style>/", "", $html);
-        $html = strip_tags($html, "<h1><h2><h3><h4><h5><h6><p><a><div><table><th><tr><td");
+        $html = strip_tags($html, "<h1><h2><h3><h4><h5><h6><p><a><div><table><th><tr><td>");
         
         $content = "<h3>Задание 19:</h3>" . $html;
         echo $content;

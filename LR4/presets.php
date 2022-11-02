@@ -1,12 +1,6 @@
 <?php
     $text = (isset($_POST['textarea'])) ? $_POST['textarea'] : "";
 
-    function return_output($file){
-        ob_start();
-        include $file;
-        return ob_get_clean();
-    }
-
     if (isset($_GET['preset'])) {
         $switcher = $_GET['preset'];
         if ($switcher == '1') {

@@ -23,8 +23,8 @@
         $xml->loadHTML($html);
         $xml->preserveWhiteSpace = false;
 
-        $html = preg_replace("/[^,]\\bа\\b/u", ", а " , $html);
-        $html = preg_replace("/[^,] \\bно\\b/u", ", но " , $html);
+        $html = preg_replace("/[^,]\\bа\\b/u", ", а", $html);
+        $html = preg_replace("/[^,]\\bно\\b/u", ", но", $html);
         $html = preg_replace("/,,/u", ",", $html);
 
         $html = str_replace("...", "…", $html);
